@@ -63,4 +63,8 @@ a {
 a:hover {
   text-decoration: none;
 }
+.section-title {
+  color: #252525;
+  font-size: 27px;
+}
 </style>

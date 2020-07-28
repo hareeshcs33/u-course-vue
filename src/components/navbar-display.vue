@@ -27,7 +27,8 @@
             <div class="form-group m-0">
               <div class="search-box">
                 <span class="search"><i class="fas fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="search for anything" />
+                <input type="text" class="form-control" placeholder="search for anything" @keyup="search" v-model="searchCourse" />
+                <!-- <button @click="search">search</button> -->
               </div>
             </div>
           </li>
@@ -72,6 +73,23 @@
     </nav>
   </div>
 </template>
+<script>
+import { eventBus } from '../main';
+
+export default {
+  data(){
+    return {
+      searchCourse: '',
+    }
+  },
+  methods: {
+    search(){
+      // console.log('search triggered', this.searchCourse);
+      eventBus.$emit('searchText', this.searchCourse);
+    }
+  }
+}
+</script>
 <style>
 .search-box {
   background: #fbfbf8;
@@ -94,5 +112,20 @@
 .search-box input:focus {
   box-shadow: none;
   background: #fbfbf8;
+}
+.u-text {
+  font-size: 30px;
+  font-family: lato;
+  text-shadow: 1px 1px 3px #d67575;
+}
+.course-text {
+  color: #252525;
+  font-size: 15px;
+  font-family: lato;
+  font-weight: bold;
+  position: absolute;
+  left: 38px;
+  bottom: 16px;
+  text-shadow: 1px 1px 3px pink;
 }
 </style>

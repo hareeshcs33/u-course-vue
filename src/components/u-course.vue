@@ -1,5 +1,5 @@
 <template>
-  <div class="u-course">
+  <div class="u-course mt-3">
     <h2 class="section-title">Courses</h2>
     <courses-list :courses="filteredCourses"> </courses-list>
   </div>

@@ -2,7 +2,7 @@
   <div id="app">
     <social-nav></social-nav>
     <navbar-display></navbar-display>
-    <hr class="mt-0"/>
+    <hr class="m-0"/>
     <!-- <sub-nav-display></sub-nav-display> -->
     
     <router-view />

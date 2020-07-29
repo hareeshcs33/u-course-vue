@@ -18,6 +18,12 @@
                 <span>({{item.ratingCount}})</span>
             </div>
             <div class="item-price">${{item.price}}</div>
+            <div class="cta-block d-flex justify-content-between mt-2">
+                <button @click="addToCart" class="btn btn-success btn-add-cart">Add To Cart</button>
+                <button @click="addToWishList" class="btn button-outline btn-heart">
+                    <span><i class="fas fa-heart"></i></span>
+                </button>
+            </div>
         </div>
     </div>
 </template>
@@ -27,6 +33,14 @@ export default {
     data(){
         return {
             
+        }
+    },
+    methods: {
+        addToCart(){
+            console.log('Add Cart Triggered');
+        },
+        addToWishList(){
+            console.log('Add wish list Triggered')
         }
     }
 }
@@ -57,5 +71,25 @@ export default {
 .item-price {
     font-size: 17px;
     font-weight: bold;
+}
+.btn-add-cart {
+    font-size: 15px;
+    padding: 1px 10px;
+}
+.btn-heart {
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+}
+.btn-heart span {
+    color: red;
+}
+.btn-heart:hover {
+    border: 1px solid green;
+}
+.btn-heart:hover span {
+    color: green;
 }
 </style>

@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     eachCourseItem(index){
-        console.log('eachCourseItem', index);
+        // console.log('eachCourseItem', index);
     }
   }
 };

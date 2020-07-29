@@ -1,5 +1,12 @@
 <template>
     <div>
         Likes
+        <div>
+            <button v-popover:foo>Toggle popover</button>
+
+            <popover name="foo" :width="120">
+                <a href="#">Well, hello there!</a>
+            </popover>
+        </div>
     </div>
 </template>

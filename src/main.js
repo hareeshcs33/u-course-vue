@@ -4,6 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Popover from 'vue-js-popover'
+Vue.use(Popover);
+
+import VPopover from 'vue-js-popover'
+Vue.use(VPopover, { tooltip: true })
+
 export const eventBus = new Vue();
 
 Vue.config.productionTip = false

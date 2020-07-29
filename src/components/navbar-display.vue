@@ -18,7 +18,7 @@
           <li class="nav-item">
             <div class="navbar-brand">
               <router-link to="/u-course"><span class="u-text">U</span> <span class="course-text">course</span></router-link>
-          </div>
+            </div>
           </li>
           <li class="nav-item">
             <router-link to="/categories">Categories</router-link>

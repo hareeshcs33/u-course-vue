@@ -5,7 +5,11 @@
     <hr class="m-0"/>
     <!-- <sub-nav-display></sub-nav-display> -->
     
-    <router-view />
+    <div class="page-content">
+      <router-view />
+    </div>
+    <hr/>
+    <footer-display></footer-display>
   </div>
 </template>
 
@@ -13,6 +17,7 @@
 import NavbarDisplay from './components/navbar-display.vue';
 import SubNavDisplay from './components/sub-nav-display.vue';
 import SocialNav from './components/social-nav.vue';
+import FooterDisplay from './components/footer-display.vue';
 
 export default {
   name: "App",
@@ -20,6 +25,7 @@ export default {
     NavbarDisplay,
     SubNavDisplay,
     SocialNav,
+    FooterDisplay,
   }
 };
 </script>
@@ -66,5 +72,8 @@ a:hover {
 .section-title {
   color: #252525;
   font-size: 27px;
+}
+.page-content {
+  min-height: 150vh;
 }
 </style>

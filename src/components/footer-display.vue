@@ -26,9 +26,7 @@
                 <ul class="drop-down-list">
                     <li class="form-group">
                         <select class="form-control w-100">
-                            <option>Aaaa</option>
-                            <option>Aaaa</option>
-                            <option>Aaaa</option>
+                            <option v-for="option in options">{{option}}</option>
                         </select>
                     </li>
                 </ul>
@@ -43,6 +41,19 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    data(){
+        return {
+            options: [
+                'aaa',
+                'bbb',
+                'ccc',
+            ]
+        }
+    }
+}
+</script>
 <style>
 .footer-block {
     padding: 30px;

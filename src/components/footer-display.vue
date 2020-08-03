@@ -46,9 +46,10 @@ export default {
     data(){
         return {
             options: [
-                'aaa',
+                'English',
                 'bbb',
                 'ccc',
+                'ddd'
             ]
         }
     }

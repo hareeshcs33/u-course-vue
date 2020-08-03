@@ -26,7 +26,7 @@
                 <ul class="drop-down-list">
                     <li class="form-group">
                         <select class="form-control w-100">
-                            <option v-for="option in options">{{option}}</option>
+                            <option v-for="(option, index) in options" :key="index">{{option}}</option>
                         </select>
                     </li>
                 </ul>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="inc-link">&copy; UCourse, Inc</div>
             </div>
-            <div class="my-link text-center">hareesh Sapparad &copy; Copyright 2020</div>
+            <div class="my-link text-center">hareesh Sapparad &copy; Copyright 2020 </div>
         </div>
     </div>
 </template>
@@ -49,7 +49,8 @@ export default {
                 'English',
                 'bbb',
                 'ccc',
-                'ddd'
+                'ddd',
+                'EEEE'
             ]
         }
     }

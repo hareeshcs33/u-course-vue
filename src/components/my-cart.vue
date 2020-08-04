@@ -16,7 +16,7 @@
         <div v-if="cartEmpty" class="cart-empty">
           <span><i class="fas fa-shopping-cart cart-img"></i></span>
           <span class="keep-shopping-text">Your cart is empty. Keep shopping to find a course!</span>
-          <button class="btn btn-danger btn-lg">Keep Shopping</button>
+          <button class="btn btn-danger btn-lg" @click="keepShopping">Keep Shopping</button>
         </div>
       </div>
     </section>
@@ -30,7 +30,9 @@ export default {
     }
   },
   methods: {
-
+    keepShopping(){
+      console.log("keepShopping method triggered")
+    }
   }
 }
 </script>

@@ -50,7 +50,8 @@ export default {
                 'bbb',
                 'ccc',
                 'ddd',
-                'EEEE'
+                'EEEE',
+                'FFFF'
             ]
         }
     }
